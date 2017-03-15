@@ -6,8 +6,15 @@ display : block;
   
 }
 
+/* pseudo classes in CSS */
 a:active,a:hover {
   
 color : red;    
   
 } 
+
+a:visited {
+ 
+color : green;  
+  
+}  

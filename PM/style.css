@@ -7,7 +7,7 @@ display : block;
 }
 
 /* pseudo classes in CSS */
-a:active,a:hover {
+a:active,a:hover,a:focus {
   
 color : red;    
   

@@ -5,3 +5,9 @@ text-decoration : none;
 display : block;  
   
 }
+
+a:active,a:hover {
+  
+color : red;    
+  
+} 

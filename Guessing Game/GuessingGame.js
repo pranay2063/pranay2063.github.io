@@ -17,7 +17,7 @@ function turn() {
 	
 	num = guessField.value;
 
-	if(!num || num < 1 || num > 100)
+	if(!num || num < 1 || num > 100 || !Number.isInteger(num))
 	{
 
 		num = 0;

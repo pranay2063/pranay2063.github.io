@@ -1,8 +1,5 @@
 
-alert("The site is under maintenance "); 
-
 var randomNumber = Math.floor(Math.random()*100) + 1;
-alert(randomNumber);
 var guessField = document.querySelector('#number');
 var button = document.querySelector('#button');
 var prev = document.querySelector('#prev');
@@ -12,8 +9,12 @@ var compare = document.querySelector('#compare');
 var cnt = 1;
 
 guessField.focus();
+button.onclick = turn;
+var resetButton;
+var flagGameOver= false;
 
 function turn() {
+	console.log(randomNumber+"----"+cnt);
 
 	num = guessField.value;
 
@@ -51,11 +52,11 @@ function turn() {
 		check.style.color = "white";
 		compare.textContent = "";
 		gameOver();
+		//return ;
 
 	}
-
 	++cnt;
-	if(cnt > 7)
+	if(cnt > 10  && !flagGameOver)
 	{
 
 		check.textContent = "GAME OVER!";
@@ -69,11 +70,9 @@ function turn() {
 
 }
 
-button.onclick = turn;
-var resetButton;
-
 function gameOver(){
 
+	flagGameOver = true;
 	guessField.disabled = true;
 	button.disabled = true;
 	resetButton = document.createElement('button');

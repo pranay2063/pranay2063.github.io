@@ -14,8 +14,7 @@ var resetButton;
 var flagGameOver= false;
 
 function turn() {
-	console.log(randomNumber+"----"+cnt);
-
+	
 	num = guessField.value;
 
 	if(!num || num < 1 || num > 100)
@@ -97,6 +96,7 @@ function resetGame() {
 	resetButton.parentNode.removeChild(resetButton);
 	randomNumber = Math.floor(Math.random()*100) + 1;
 	guessField.focus();
+	flagGameOver = false;
 
 }
 

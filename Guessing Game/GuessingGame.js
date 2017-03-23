@@ -55,7 +55,7 @@ function turn() {
 
 	}
 	++cnt;
-	if(cnt > 7  && !flagGameOver)
+	if(cnt > 6  && !flagGameOver)
 	{
 
 		check.textContent = "GAME OVER! Actual number was "+ randomNumber +".";

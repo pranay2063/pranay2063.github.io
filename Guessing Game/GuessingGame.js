@@ -95,6 +95,7 @@ function resetGame() {
 
 	resetButton.parentNode.removeChild(resetButton);
 	randomNumber = Math.floor(Math.random()*100) + 1;
+	guessField.focus();
 
 }
 

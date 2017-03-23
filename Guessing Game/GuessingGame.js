@@ -1,5 +1,5 @@
 
-alert("The site is under maintenance ");
+alert("The site is under maintenance "); 
 
 var randomNumber = Math.floor(Math.random()*100) + 1;
 alert(randomNumber);

@@ -56,7 +56,7 @@ function turn() {
 
 	}
 	++cnt;
-	if(cnt > 10  && !flagGameOver)
+	if(cnt > 7  && !flagGameOver)
 	{
 
 		check.textContent = "GAME OVER!";

@@ -1,6 +1,8 @@
 
+alert("The site is under maintenance ");
 
 var randomNumber = Math.floor(Math.random()*100) + 1;
+alert(randomNumber);
 var guessField = document.querySelector('#number');
 var button = document.querySelector('#button');
 var prev = document.querySelector('#prev');

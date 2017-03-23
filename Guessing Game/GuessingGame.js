@@ -15,7 +15,7 @@ var flagGameOver= false;
 
 function turn() {
 	
-	num = guessField.value;
+	num = Number(guessField.value);
 
 	if(!num || num < 1 || num > 100 || !Number.isInteger(num))
 	{

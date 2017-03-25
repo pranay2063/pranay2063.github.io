@@ -21,7 +21,7 @@ button.onclick = turn;
 
 function askName(){
 
-	name = prompt("Enter your first name : ");
+	name = prompt("Enter your name : ");
 
 	if(!name)
 		name = "Player";

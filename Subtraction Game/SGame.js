@@ -33,7 +33,7 @@ function askName(){
 	if(name.indexOf("Sonveer") != -1 || name.indexOf("sonveer") != -1)
 		name = "Sonakshi";
 	else if(name.indexOf("Rohit") != -1 || name.indexOf("rohit") != -1)
-		name = "Soumya"
+		name = "Rohit Johri";
 
 }
 
@@ -41,7 +41,7 @@ function turn(){
 
 	var num = number.value;
 
-	if(!num || num > 3 || num < 1 || !Number(num) || (sum - num) < 0 || !isNumber(num))
+	if(!num || num > 3 || num < 1 || !Number(num) || (sum - num) < 0)
 		num = 1;
 
 	player.style.color = "white";

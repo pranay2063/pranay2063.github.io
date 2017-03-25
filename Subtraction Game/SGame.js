@@ -30,7 +30,7 @@ function askName(){
 	tmp = tmp.toUpperCase();
 	name = name.toLowerCase();
 	name = tmp + name.slice(1);
-	if(name == "Sonveer")
+	if(name.indexOf("Sonveer") != -1)
 		name = "Sonakshi";
 
 }

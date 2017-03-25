@@ -1,0 +1,16 @@
+
+html {
+
+	font-family: cursive;
+
+}
+
+body {
+
+	width: 50%;
+	min-width: 480px;
+	max-width: 800px;
+	margin: 100px auto;
+
+}
+

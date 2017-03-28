@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Hello World App </title>
+</head>
+<body id="content" class="sapUiBody" >
+
+</body>
+<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" type="text/javascript"
+	id="sap-ui-bootstrap" 
+	data-sap-ui-theme="sap_belize"
+	data-sap-ui-libs="sap.m"
+	data-sap-ui-compatVersion="edge" 
+	data-sap-ui-preload="async" >
+</script>
+
+<script type="text/javascript">
+	sap.ui.getCore().attachInit(function(){
+		//First an app is created and then page1 is initialised
+		var app = new sap.m.App("myApp", { initialPage:" page1" } );
+
+		//first page
+		var page1 = new sap.m.Page("page1", {
+			title : "Hello World",
+			showNavButton : false,
+			content : new sap.m.Button({
+				text : "Go to page2",
+				press : function(){
+					//navigate to page2
+					app.to("page2");
+				}
+			})
+		} );
+
+		//second page
+		var page2 = new sap.m.Page("page2", {
+			title : "Hello World 2",
+			showNavButton : true,
+			navButtonPress : function(){
+				//navigate to first page
+				app.back();
+			}
+		} );
+
+		//add both the pages to app
+		app.addPage(page1).addPage(page2);
+
+		//place the app into HTML document
+		app.placeAt("content");
+
+	});
+</script>
+
+</html>
+
+
+

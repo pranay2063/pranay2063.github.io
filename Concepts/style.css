@@ -8,7 +8,7 @@ display : block;
 a:visited {
 /* pseudo classes in CSS */  
 /* visited should come before active,hover,focus in source code as per cascade rule */   
-color : green;  
+color : lightblue;  
 }  
 
 a:active,a:hover,a:focus {  

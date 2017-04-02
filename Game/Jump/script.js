@@ -39,10 +39,11 @@ function draw(){
 	x += dx;
 	y += dy;
 
-	if(x < 0) dx = -dx;
-	if(y < 0) dy = -dy;
-	if(x > canvas.width)	dx = -dx;
-	if(y > canvas.height)	dy = -dy;
+	//ballRadius is included to detect collision when ball just touches the wall
+	if(x < ballRadius) dx = -dx;
+	if(y < ballRadius) dy = -dy;
+	if(x > (canvas.width - ballRadius))	dx = -dx;
+	if(y > (canvas.height - ballRadius))	dy = -dy;
 }
 
 setInterval(draw, 1);

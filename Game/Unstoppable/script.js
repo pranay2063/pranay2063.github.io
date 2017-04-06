@@ -46,7 +46,7 @@ function draw(){
 	if(y > (canvas.height - ballRadius))	dy = -dy;
 }
 
-setInterval(draw, 1);
+setInterval(draw, 10);
 
 
 

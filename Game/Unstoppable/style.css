@@ -7,17 +7,13 @@
 canvas {
 	width : 480px; 
 	height : 320px;
-	background: #eee;
-	display: block;
-	margin: 100px 50px 50px 505px;
+	background : #eee;
+	display : block;
+	margin : auto;
+	position : absolute;
+    	top : 0;
+    	left : 0;
+    	bottom : 0;
+    	right : 0;
 }
-
-//Make this site resposive to mobile devices
-@media screen and (max-width : 1280) and (min-width : 768) {
-	canvas {
-		width : 600px;
-		height : 400px;
-		margin: 165px 50px 50px 100px;
-	}	
-}	
 

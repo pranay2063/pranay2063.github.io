@@ -5,6 +5,8 @@
 }
 
 canvas {
+	width : 480px; 
+	height : 320px;
 	background: #eee;
 	display: block;
 	margin: 100px 50px 50px 505px;

@@ -23,7 +23,7 @@ var y = canvas.height-30;
 
 var dx = 2;
 var dy = -2;
-var ballRadius = 5;
+var ballRadius = 10;
 
 function drawBall(){
 	context.beginPath();

@@ -12,4 +12,12 @@ canvas {
 	margin: 100px 50px 50px 505px;
 }
 
+//Make this site resposive to mobile devices
+@media screen and (max-width : 1280) and (min-width : 768) {
+	canvas {
+		width : 600px;
+		height : 400px;
+		margin: 165px 50px 50px 100px;
+	}	
+}	
 

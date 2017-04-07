@@ -5,9 +5,16 @@
 }
 
 canvas {
+	width : "480";
+	height : "320";
 	background: #eee;
 	display: block;
-	margin: 100px 50px 50px 505px;
+	margin: auto;
+	position : absolute;
+	top : 0;
+	right : 0;
+	bottom : 0;
+	left : 0;
 }
 
 

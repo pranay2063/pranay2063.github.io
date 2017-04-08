@@ -30,11 +30,12 @@ function askName(){
 	tmp = tmp.toUpperCase();
 	name = name.toLowerCase();
 	name = tmp + name.slice(1);
+	/*
 	if(name.indexOf("Sonveer") != -1 || name.indexOf("sonveer") != -1)
 		name = "Sonakshi";
 	else if(name.indexOf("Rohit") != -1 || name.indexOf("rohit") != -1)
 		name = "Rohit Johri";
-
+	*/
 }
 
 function turn(){

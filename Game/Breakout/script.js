@@ -7,7 +7,7 @@ var rightPressed = false;
 
 document.addEventListener("keyup", keyUpHandler);
 document.addEventListener("keydown", keyDownHandler);
-//document.addEventListener("mousemove", mouseMoveHandler, false);
+document.addEventListener("mousemove", mouseMoveHandler, false);
 
 function mouseMoveHandler(e){
 	var relativeX = e.clientX - canvas.offsetLeft;

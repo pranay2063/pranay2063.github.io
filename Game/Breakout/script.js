@@ -18,8 +18,8 @@ button.addEventListener("click", startGame);
 var x = canvas.width/2;
 var y = canvas.height-20;
 
-var dx = 4;
-var dy = -4;
+var dx = 6;
+var dy = -6;
 var score = 0;
 var lives = 2;
 var broken = 0;
@@ -193,8 +193,8 @@ function draw(){
 				else
 				{
 
-					dx = 6;
-					dy = -6;
+					dx = 8;
+					dy = -8;
 					x = canvas.width/2;
 					y = canvas.height-20;
 					paddleX = (canvas.width - paddleWidth)/2;
@@ -212,8 +212,8 @@ function draw(){
 function startGame(){
 
 	if(flagGameOver){
-		dx = 4;
-		dy = -4;
+		dx = 6;
+		dy = -6;
 		score = 0;
 		lives = 2;
 		broken = 0;

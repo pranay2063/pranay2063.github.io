@@ -35,7 +35,7 @@ function keyDownHandler(event){
 }
 
 var x = canvas.width/2;
-var y = canvas.height-30;
+var y = canvas.height-20;
 
 var dx = 2;
 var dy = -2;
@@ -50,6 +50,7 @@ var brickStartTop = 35;
 var brickStartLeft = 30;
 
 var score = 0;
+var lives = 2;
 
 var bricks = [];
 for(i = 0; i < brickRowCount; ++i){
@@ -73,6 +74,12 @@ function collisionDetection(){
             }
 		}
 	}
+}
+
+function drawLives(){
+	context.font = "12px Arial";
+	context.fillStyle = "rgba(0, 0, 255, 1)";
+	context.fillText("LIVES : "+lives, canvas.width-65, 20);
 }
 
 function drawScore() {
@@ -134,6 +141,7 @@ function draw(){
 	drawBrick();
 	drawPaddle();
 	drawScore();
+	drawLives();
 	x += dx;
 	y += dy;
 
@@ -145,8 +153,23 @@ function draw(){
 	if(y < ballRadius) dy = -dy;
 		else if(y > (canvas.height - ballRadius - paddleHeight) && (x > paddleX && x < paddleX + paddleWidth))	dy = -dy;
 			else if(y > (canvas.height - ballRadius)){
-				alert("GAME OVER");
-				document.location.reload();
+				
+				--lives;
+				if(!lives){
+					alert("GAME OVER");
+					document.location.reload();
+				}
+				else
+				{
+
+					dx = 3;
+					dy = -3;
+					x = canvas.width/2;
+					y = canvas.height-20;
+					paddleX = (canvas.width - paddleWidth)/2;
+					paddleY = (canvas.height - paddleHeight);
+				}	
+			
 			}
 
 
@@ -154,11 +177,7 @@ function draw(){
 	else if(leftPressed && paddleX > 0) paddleX -= 7;
 }
 
-setInterval(draw, 1);
-
-
-
-
+setInterval(draw, 10);
 
 
 

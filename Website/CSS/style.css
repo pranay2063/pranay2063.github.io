@@ -36,6 +36,7 @@ article {
 	flex: 4;
 	background-color: lightgreen;
 	background-image: url("../Images/IMG_20161118_074015 (1).v3 (1).jpg");
+	background-size : cover;
 }
 
 article ul{

@@ -1,3 +1,3 @@
 
 $('ol li').wrapInner('<span class="diff" ></span>');
-$('.diff').css('color', '#006400');
+$('.diff').css('color', '#008080');

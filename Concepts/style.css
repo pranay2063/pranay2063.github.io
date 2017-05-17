@@ -1,23 +1,18 @@
 
 a {
-text-decoration : none; 
+  text-decoration : none; 
+  /* display : block; */
 }
 
 
 a:visited {
-/* pseudo classes in CSS */  
-/* visited should come before active,hover,focus in source code as per cascade rule */   
-color : rgba(0,0,255,0.5); 
+  /* pseudo classes in CSS */  
+  /* visited should come before active,hover,focus in source code as per cascade rule */   
+  color : rgba(0,0,255,0.5); 
 }  
 
 a:active,a:hover,a:focus {  
-color : red;    
+  color : red;    
 } 
-
-ul li{
-  display:inline;
-}
-
-
 
 

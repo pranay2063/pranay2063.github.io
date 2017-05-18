@@ -11,9 +11,17 @@ a:visited {
   color : rgba(0,0,255,0.5); 
 }  
 
-a:active,a:hover,a:focus {  
+a:hover {  
   color : red;    
 } 
+
+a:focus {
+  color : #AE58D6; 
+}  
+
+a:active {
+  color : #D6589B; 
+}  
 
 ol {
   text-align : center;

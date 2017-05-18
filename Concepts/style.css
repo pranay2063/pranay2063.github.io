@@ -1,4 +1,8 @@
 
+html {
+  background-image: url("../grey-sea.jpg"); 
+}  
+
 a {
   text-decoration : none; 
   /* display : block; */

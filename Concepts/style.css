@@ -17,5 +17,6 @@ a:active,a:hover,a:focus {
 
 ol {
   text-align : center;
+  line-height : 1.5rem;
   list-style-position : inside;
 }  

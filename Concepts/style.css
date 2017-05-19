@@ -34,11 +34,12 @@ ol {
 }  
 
 .mainpage {
-  list-style-type : none;
-  width : 20rem;
   margin : 0;
   padding : 0;
+  width : 20rem;
   line-height : 2rem;
+  text-align : center;
+  list-style-type : none;
 }  
 
 .mainpage li a{

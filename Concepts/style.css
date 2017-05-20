@@ -28,8 +28,6 @@ a:active {
 }  
 
 ol {
-  height : 100%;
-  position : fixed;
   margin-left : 20rem;
   text-align : center;
   line-height : 1.3rem;
@@ -40,6 +38,8 @@ ol {
   margin : 0;
   padding : 0;
   width : 20rem;
+  height : 100%;
+  position : fixed;
   line-height : 2rem;
   text-align : center;
   list-style-type : none;

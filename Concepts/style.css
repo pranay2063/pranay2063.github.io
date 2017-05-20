@@ -49,6 +49,6 @@ ol {
   display : block; 
 } 
 
-.mainpage li:hover {
+.mainpage li:hover, .mainpage li:active, .mainpage li:focus {
   background : #A1D658; 
 }

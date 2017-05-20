@@ -30,6 +30,7 @@ a:active {
 ol {
   text-align : center;
   line-height : 1.3rem;
+  margin-left : 20rem;
   list-style-position : inside;
 }  
 

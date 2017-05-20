@@ -28,9 +28,11 @@ a:active {
 }  
 
 ol {
+  height : 100%;
+  position : fixed;
+  margin-left : 20rem;
   text-align : center;
   line-height : 1.3rem;
-  margin-left : 20rem;
   list-style-position : inside;
 }  
 

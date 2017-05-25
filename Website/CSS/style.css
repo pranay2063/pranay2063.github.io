@@ -34,8 +34,8 @@ nav li{
 
 article {
 	flex: 4;
-	color: green;
-	background-color: lightseagreen;
+	color: lightseagreen;
+	background-color: lightgreen;
 	background-position: center center;
 	background-image: url("../Images/IMG_20161118_074015 (1).v3 (1).jpg");
 	background-size: cover;
